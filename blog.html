@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><u style="text-decoration-color: red;">Question 1 : What's the different between Map,Filter,ForEach,Find in Js?</u></h1>
+    <h3 style="color: green;margin: 0px;">Ans:</h3> 1. Map takes an array as parameter and makes a new array but it keeps first array unchanged just create a new array. Example: <br>
+    const array1 = [1, 4, 9, 16];
+    let gg = array1.map((x)=>x*2);
+    console.log(gg);
+    console.log(array1)
+    <br>
+    Here, gg's output is [ 2, 8, 18, 32 ] for map and array1's output is unchanged means [1, 4, 9, 16].
+    <br><br>
+    2. Filter is used for creating a new array from an existing array. New array's value will be those who passes conditions. Example: <br>
+    const array2 = ['Rafique','Safique','Jabbar','Sadnan'];
+    let gg = array2.filter((x)=>x.includes('que'));
+    console.log(gg);
+    <br>
+    Here, only Rafique and Safique has passed the condition cause they only has "que" in there name so the output is [ 'Rafique', 'Safique' ];
+    <br><br>
+    3. ForEach does not create a new array, it just execute array for each element of the existing array.
+    Example: <br>
+    const array3 = ['a', 'b', 'c'];
+    array1.forEach((element) => console.log(element)); <br>
+    Here, it's output is "a","b","c"
+    <br><br>
+    4. Find is used for finding first element of an array.If there is no existing element it will return undefined.Example: <br>
+    const numbers = [1, 2, 3, 4];
+    const foundNumber = numbers.find((num) => num > 2);<br>
+    Here, condition is right for 3,4. 3 is the first element so it returns 3 as output.
+
+    <h1><u style="text-decoration-color: red;">Question 2 : What's the different between LocalStorage,SessionStorage,Cookies?</u></h1>
+    <h3 style="color: green;margin: 0px;">Ans:</h3>
+    1.LocalStorage = LocalStorage is a storage which saves our data on device.LocalStorage has 4 items:setItem,getItem,removeItem,clear. Example: If we select book and add it to our cart in Rokomari then if we close out app and get into the app again we can see out cart items are  still available even if we don't log in to Rokomari app.Rokomari saves our cart item to our local storage. <br>
+    2.SessionStorage = Session storage is similar to local storage, It also saves our data in our local device.The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas sessionStorage data is cleared when the page session ends. <br>
+    3.Cookies = Cookies are small text files stored on the client-side (browser) by websites. They are used for maintaining user-specific information across multiple requests and sessions. Cookies have an expiration date.
+    <h1><u style="text-decoration-color: red;">Question 3 : What is EventLoop in Js?</u></h1>
+    <h3 style="color: green;margin: 0px;">Ans:</h3>
+    We all know that Js is an Asynchronous programming language, that means Js can't do multiple task at the same moment. So, this single thread language needs something that can do it's work fast and accurately. EventLoop which is a browser property helps Js to do multiple operations. It prevents blocking the main thread during time-consuming operations, ensuring a smooth and responsive user experience in web applications.
+
+    
+
+    
+</body>
+</html>
