@@ -42,6 +42,12 @@
     <h3 style="color: green;margin: 0px;">Ans:</h3>
     We all know that Js is an Asynchronous programming language, that means Js can't do multiple task at the same moment. So, this single thread language needs something that can do it's work fast and accurately. EventLoop which is a browser property helps Js to do multiple operations. It prevents blocking the main thread during time-consuming operations, ensuring a smooth and responsive user experience in web applications.
 
+    <h1><u style="text-decoration-color: red;">quizTimer()</u></h1>
+    quizTimer took dismiss as a parameter, and using array function it first started with conditional statement if(dismiss). If dismiss has a value then 'if' condition will run and will clear timer function. If dismiss is not true then it will keep running timer function. First, timer function took countHtml from index.html's count id. Then it converterd it into 60seconds. maked mod into minute.  There is a conditional check to see if the count is greater than 60. If it is, the code checks if the count is divisible by 2. If it is even, it adds a CSS class to change the text color of the countHtml element to red with a higher intensity. If it is odd, it adds a CSS class to change the text color to red with a lower intensity.
+    
+    <h1><u style="text-decoration-color: red;">ChooseQuiz()</u></h1>
+    chooseQuiz is an array function that took index, givenAns as 2 parameter. isExist used find in answer array. If isExist is found then if condition will start and if not found then it will go to else option and will push quizData[index], givenAns inside answers. After if else done it will call displayAnswers at the end to show results in website.
+
     
 
     
